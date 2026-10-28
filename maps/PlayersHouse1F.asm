@@ -175,9 +175,10 @@ if DEF(DEBUG)
 	text "Don't forget to use"
 	line "your debug radio!"
  
- para "he added into"
- line "debug option"
+ para "He added into"
+ line "Debug option"
  done
+
 else
 	text "Oh, <PLAYER>!"
 	line "You're awake."
