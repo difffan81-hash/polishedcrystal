@@ -109,6 +109,7 @@ OptionsDescriptions:
 .debugger:
  text "debug your game"
  line "to make cool"
+ prompt
 
 OptionsDoneDescription:
 	text "Save options and"
