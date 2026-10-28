@@ -1399,6 +1399,7 @@
 	wildmon 51, GOLBAT
 	wildmon 54, HAUNTER
 	wildmon 51, DUNSPARCE
+ wildmon 51, CROBAT
 	end_grass_wildmons
 
 	def_grass_wildmons SOUL_HOUSE_B1F
