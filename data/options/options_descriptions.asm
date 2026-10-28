@@ -106,6 +106,10 @@ OptionsDescriptions:
 	line "and kilograms."
 	prompt
 
+.debugger:
+ text "debug your game"
+ line "to make cool"
+
 OptionsDoneDescription:
 	text "Save options and"
 	line "exit the menu."
