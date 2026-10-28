@@ -11,6 +11,8 @@ InitialOptionNames:
 	dw .TradedMon
 	dw .EvolveInBattle
 	dw .ColorVariation
+ dw .debugpokemon
+ dw .debugoption 
 	assert_table_length NUM_INITIAL_MENU_OPTIONS
 
 .Natures:
@@ -35,3 +37,7 @@ InitialOptionNames:
 	db "Evolve in battle@"
 .ColorVariation:
 	db "Color variation@"
+.debugpokemon:
+ db "Debug pokemon"
+.debugoption:
+ db "Debug Option"
