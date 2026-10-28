@@ -24,6 +24,8 @@ The previous official version was [v3.1.1](https://github.com/Rangi42/polishedcr
 
 *If you have any questions about playing or patching, [read the FAQ](FAQ.md)!*
 
+also debug
+
 ## What’s New in v3.2.3
 
 Below is a brief summary of the major changes and additions. A more detailed changelog will be released soon.
