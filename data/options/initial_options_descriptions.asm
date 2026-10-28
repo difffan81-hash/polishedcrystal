@@ -165,6 +165,17 @@ InitialOptionDescriptions:
 	line "on nicknames."
 	prompt
 
+ .debugpokemon:
+  text "change the"
+  line "pokemon into"
+  cont "legacy"
+ prompt
+
+ .debugoption:
+  text "debug option"
+  line "can do everything"
+ prompt
+
 InitialOptionsDoneDescription:
 	text "Save your choices"
 	line "and play the game!"
