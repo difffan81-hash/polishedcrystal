@@ -43,4 +43,4 @@ OptionNames:
 .PokedexUnits:
 	db "#dex Units@"
 .debugger:
- db "debug"
+ db "debug@"
