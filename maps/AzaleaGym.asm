@@ -130,7 +130,6 @@ AzaleaGymBugsyScript:
 
 	para "OK, you win."
 	line "Take this Badge"
- cont "Now."
 	done
 
 .AfterText:
