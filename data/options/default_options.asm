@@ -20,4 +20,4 @@ endc
 ; wInitialOptions2
 	db EVS_OPT_MODERN | (1 << RTC_OPT) | (1 << EVOLVE_IN_BATTLE_OPT)
 ; debugger 
- db 1 << debugger
+ db 1 << debugoption
