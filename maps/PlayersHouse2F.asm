@@ -408,5 +408,5 @@ InitialRadioText4:
 Debug_welcome:
  text "welcome!"
  
- text "#mon Debug!"
+ para "#mon Debug!"
  line "#mon!"
