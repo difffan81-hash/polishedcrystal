@@ -7,11 +7,14 @@ PlayersHouse2F_MapScriptHeader:
 
  def_debug
   dw .debug1
-  dw .debug1
+  dw .debug2
 
  .debug1:
   text "welcome to"
   line "pokemon debug!"
+ 
+ .debug2:
+  text "debug activated!"
 
 	def_warp_events
 	warp_event  7,  0, PLAYERS_HOUSE_1F, 3
