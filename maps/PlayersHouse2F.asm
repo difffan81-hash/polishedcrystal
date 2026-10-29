@@ -345,6 +345,8 @@ InitialRadio:
 	musicfadeout MUSIC_NEW_BARK_TOWN, 16
 	writetext InitialRadioText4
 	pause 45
+ write text Debug_welcome
+ pause 45
 	closetext
 	setevent EVENT_LISTENED_TO_INITIAL_RADIO
 	end
@@ -403,3 +405,8 @@ InitialRadioText4:
 	text "#mon!"
 	line "#mon Channel…"
 	done
+Debug_welcome:
+ text "welcome!"
+ 
+ text "#mon Debug!"
+ line "#mon!"
