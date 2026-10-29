@@ -38,6 +38,6 @@ InitialOptionNames:
 .ColorVariation:
 	db "Color variation@"
 .debugpokemon:
- db "Debug pokemon"
+ db "Debug pokemon@"
 .debugoption:
- db "Debug Option"
+ db "Debug Option@"
