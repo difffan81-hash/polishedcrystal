@@ -13,6 +13,7 @@ OptionsDescriptions:
 	dw .TurningSpeed
 	dw .ClockFormat
 	dw .PokedexUnits
+ dw .debugger
 	assert_table_length NUM_OPTIONS
 
 .TextSpeed:
