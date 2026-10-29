@@ -4,4 +4,4 @@ debugger:
         assert_table_length NUM_OPTIONS
 
 .map_choose:
- db "map selector"
+ db "map selector@"
