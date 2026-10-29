@@ -22,6 +22,7 @@ BuenasPasswordTable:
 	dr .Moves
 	dr .XItems
 	dr .RadioStations
+ dr .debugger
 	assert_table_length NUM_PASSWORD_CATEGORIES
 
                 ; string type, points, option 1, option 2, option 3
@@ -36,3 +37,5 @@ BuenasPasswordTable:
 .Moves:         password_group BUENA_MOVE,   12, TACKLE, GROWL, MUD_SLAP
 .XItems:        password_group BUENA_ITEM,   12, X_ATTACK, X_DEFEND, X_SPEED
 .RadioStations: password_group BUENA_STRING, 13, "#mon Talk@", "#mon Music@", "Lucky Channel@"
+.debugger: password_group BUENA_MON, 12,
+ mapselect 
