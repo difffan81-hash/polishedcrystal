@@ -38,4 +38,4 @@ BuenasPasswordTable:
 .XItems:        password_group BUENA_ITEM,   12, X_ATTACK, X_DEFEND, X_SPEED
 .RadioStations: password_group BUENA_STRING, 13, "#mon Talk@", "#mon Music@", "Lucky Channel@"
 .debugger: password_group BUENA_MON, 12,
- mapselect 
+ .mapselect  .pokemonchange
