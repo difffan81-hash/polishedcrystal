@@ -421,3 +421,4 @@ Debug_welcome:
  
  para "#mon Debug!"
  line "#mon!"
+ debug
