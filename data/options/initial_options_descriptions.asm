@@ -13,6 +13,8 @@ InitialOptionDescriptions:
 	dw .TradedMon
 	dw .EvolveInBattle
 	dw .ColorVariation
+ dw .debugpokemon
+ dw .debugoption
 	assert_table_length NUM_INITIAL_MENU_OPTIONS
 
 .Natures:
