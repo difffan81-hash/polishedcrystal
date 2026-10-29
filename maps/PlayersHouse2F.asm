@@ -5,6 +5,14 @@ PlayersHouse2F_MapScriptHeader:
 	callback MAPCALLBACK_NEWMAP, PlayersHouse2FInitializeRoom
 	callback MAPCALLBACK_TILES, PlayersHouse2FSetSpawn
 
+ def_debug
+  dw .debug1
+  dw .debug1
+
+ .debug1:
+  text "welcome to"
+  line "pokemon debug!"
+
 	def_warp_events
 	warp_event  7,  0, PLAYERS_HOUSE_1F, 3
 
