@@ -1,2 +1,3 @@
 .debugpokemon:
- 
+         table_width 2
+         dw "custom character"
