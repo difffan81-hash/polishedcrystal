@@ -62,6 +62,7 @@ OptionsMenu_CallOptionRoutine:
 	dw Options_TurningSpeed
 	dw Options_ClockFormat
 	dw Options_PokedexUnits
+ dw Options_Debugger
 	dw Options_Done
 	assert_table_length NUM_OPTIONS + 1 ; include "Done"
 
@@ -428,6 +429,9 @@ Options_PokedexUnits:
 	db "Imperial@"
 .Metric:
 	db "Metric  @"
+
+Options_Debugger:
+ ldh a, [hJoyPressed]
 
 Options_TextAutoscroll:
 	ldh a, [hJoyPressed]
