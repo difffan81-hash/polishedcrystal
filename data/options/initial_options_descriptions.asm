@@ -13,8 +13,8 @@ InitialOptionDescriptions:
 	dw .TradedMon
 	dw .EvolveInBattle
 	dw .ColorVariation
- dw .debugpokemon
- dw .debugoption
+ dw .pokemonchange
+ dw .mapselect
 	assert_table_length NUM_INITIAL_MENU_OPTIONS
 
 .Natures:
@@ -167,15 +167,14 @@ InitialOptionDescriptions:
 	line "on nicknames."
 	prompt
 
- .debugpokemon:
+ .pokemonchange:
   text "change the"
   line "pokemon into"
   cont "legacy"
  prompt
 
- .debugoption:
-  text "debug option"
-  line "can do everything"
+ .mapselect:
+  text "select a map"
  prompt
 
 InitialOptionsDoneDescription:
