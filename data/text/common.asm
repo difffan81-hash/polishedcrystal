@@ -3145,10 +3145,14 @@ SECTION "_ElmText1", ROMX
 _ElmText1::
 	text "Hello! Sorry to"
 	line "keep you waiting!"
+ 
+ para "this is a debug version"
 
 if !DEF(DEBUG)
 	para "Welcome to the"
 	line "world of #mon!"
+ 
+ para "this is a debug version"
 
 	para "My name is Elm."
 
