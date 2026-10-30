@@ -37,5 +37,5 @@ BuenasPasswordTable:
 .Moves:         password_group BUENA_MOVE,   12, TACKLE, GROWL, MUD_SLAP
 .XItems:        password_group BUENA_ITEM,   12, X_ATTACK, X_DEFEND, X_SPEED
 .RadioStations: password_group BUENA_STRING, 13, "#mon Talk@", "#mon Music@", "Lucky Channel@"
-.debugger:         password_group BUENA_ITEM, 12,
-POKE_BALL, GREAT_BALL, ULTRA_BALL, FRESH_WATER, SODA_POP, LEMONADE
+.debugger:       password_group BUENA_DEBUG, 12,
+POKE_BALL, GREAT_BALL, ULTRA_BALL, FRESH_WATER, SODA_POP, LEMONADE, CYNDAQUIL, TOTODILE, CHIKORITA
