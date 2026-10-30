@@ -40,6 +40,7 @@ MainMenu:
 	db "New Game+@"
 	db "Options@"
 	db "Music Player@"
+ db "debug option@"
 
 .Jumptable:
 	dw MainMenu_Continue
@@ -210,3 +211,6 @@ MainMenu_Continue:
 
 MainMenu_MusicPlayer:
 	farjp MusicPlayer
+
+debug option:
+ farjp Debugger 
