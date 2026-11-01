@@ -3,6 +3,7 @@ MomPhoneGreetingText:
 
 	para "Oh, hi, <PLAYER>!"
 	line "Working hard?"
+ cont "Oh is Debug!"
 	done
 
 MomPhoneLandmarkText:
