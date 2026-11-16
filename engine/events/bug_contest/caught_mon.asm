@@ -40,7 +40,7 @@ BugContest_SetCaughtContestMon:
 	ret
 
 .caughttext
-	; Caught @ !
+	; Caught an @ !
 	text_farend _ContestCaughtMonText
 DisplayAlreadyCaughtText:
 	call GetPokemonName
