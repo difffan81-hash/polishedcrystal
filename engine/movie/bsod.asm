@@ -98,7 +98,7 @@ BSODMessage:
 	next1 "crash to the deve-"
 	next1 "loper, Rangi42, at"
 	next1 "tinyurl.com/pkpc3."
-	next  "Error:"
+	next  "See Error:"
 	done
 
 VBABSODMessage:
@@ -110,7 +110,7 @@ VBABSODMessage:
 	next1 "accurate emulator,"
 	next1 "such as BGB, mGBA,"
 	next1 "or Gambatte."
-	next  "Error:"
+	next  "See Error:"
 	done
 
 BSODErrorStrings:
