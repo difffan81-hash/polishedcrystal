@@ -2,6 +2,8 @@ DefaultOptions:
 ; wOptions3
 if DEF(DEBUG)
 	db 1 << NICKNAMES_NEVER
+    db 2 << Debug
+    db 2 << DebugSpeed
 else
 	db 0
 endc
