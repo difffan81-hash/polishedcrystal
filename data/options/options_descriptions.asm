@@ -109,7 +109,13 @@ OptionsDescriptions:
 
 .Debugger:
  text "Debug your game"
- line "To make better"
+ line "to make better"
+ prompt
+
+.DebugSpeed:
+ text "Speed up the game"
+ line "to make fast"
+ cont "and slow"
  prompt
 
 OptionsDoneDescription:
