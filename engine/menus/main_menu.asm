@@ -55,7 +55,7 @@ MainMenu:
 	const MAINMENU_ITEM_NEW_GAME_PLUS ; 2
 	const MAINMENU_ITEM_OPTION        ; 3
 	const MAINMENU_ITEM_MUSIC_PLAYER  ; 4
-    const MAINMENU_ITEM_DEBUG         ;5
+    const MAINMENU_DEBUG         ;5
 
 MainMenuItems:
 ; MAINMENU_MENU_NEW_GAME
@@ -63,7 +63,7 @@ MainMenuItems:
 	db MAINMENU_ITEM_NEW_GAME
 	db MAINMENU_ITEM_OPTION
 	db MAINMENU_ITEM_MUSIC_PLAYER
-    db MAINMENU_ITEM_DEBUG
+    db MAINMENU_DEBUG
 	db -1
 ; MAINMENU_MENU_CONTINUE
 	db 5
@@ -71,7 +71,7 @@ MainMenuItems:
 	db MAINMENU_ITEM_NEW_GAME
 	db MAINMENU_ITEM_OPTION
 	db MAINMENU_ITEM_MUSIC_PLAYER
-    db MAINMENU_ITEM_DEBUG
+    db MAINMENU_DEBUG
 	db -1
 ; MAINMENU_MENU_NEW_GAME_PLUS
 	db 6
@@ -80,13 +80,14 @@ MainMenuItems:
 	db MAINMENU_ITEM_NEW_GAME_PLUS
 	db MAINMENU_ITEM_OPTION
 	db MAINMENU_ITEM_MUSIC_PLAYER
-    db MAINMENU_ITEM_DEBUG
+    db MAINMENU_DEBUG
 	db -1
 
 	const_def
 	const MAINMENU_MENU_NEW_GAME      ; 0
 	const MAINMENU_MENU_CONTINUE      ; 1
 	const MAINMENU_MENU_NEW_GAME_PLUS ; 2
+    const MAINMENU_MENU_NEW_GAME_PLUS_DEBUG ; 3
 
 MainMenu_GetWhichMenu:
 	ld a, [wSaveFileExists]
@@ -216,9 +217,6 @@ MainMenu_Continue:
 MainMenu_MusicPlayer:
 	farjp MusicPlayer
 
-Debug:
-    farjp Debugger 
-
-MAINMENU_ITEM_DEBUG:
-   ;; soon
-   ld a, [Debug]
+MAINMENU_DEBUG:
+    farjp Debug
+    ld a, [BillDebug]
