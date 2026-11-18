@@ -218,5 +218,10 @@ MainMenu_MusicPlayer:
 	farjp MusicPlayer
 
 MAINMENU_DEBUG:
-    farjp Debug
+    farjp Debug@
     ld a, [BillDebug]
+    call BillDebug
+
+MAINMENU_MENU_NEW_GAME_PLUS_DEBUG:
+    farjp  Debug@
+    call Debug
