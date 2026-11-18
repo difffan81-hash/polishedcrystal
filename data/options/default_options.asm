@@ -23,3 +23,5 @@ endc
 	db EVS_OPT_MODERN | (1 << RTC_OPT) | (1 << EVOLVE_IN_BATTLE_OPT)
 ;  pokemonchange
  db 1 << pokemonchange
+;  mapselect
+ db 2 | (1 << Debug)
