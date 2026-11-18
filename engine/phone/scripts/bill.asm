@@ -62,6 +62,3 @@ BillPhoneWholePCFull:
 	farwritetext BillWholePCFullText
 	waitbutton
 	end
-.Debug
-    farwritetext BillDebug
-    end
