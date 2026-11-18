@@ -31,6 +31,11 @@ BillPhoneScript1:
 	farwritetext BillPhoneNearlyFullText
 	end
 
+.Debug
+    farwritetext BillDebug
+    readvar VAR_DEBUG
+    end
+
 .full
 	farwritetext BillPhoneFullText
 	sjumpfwd BillPhoneScriptCheckForBoxes
