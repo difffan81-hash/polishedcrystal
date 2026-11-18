@@ -144,6 +144,7 @@ Route35NationalParkGate_LeaveTheRestBehind:
 	ifless 6, Route35NationalParkGate_LessThanFullParty
 	readvar VAR_BOXSPACE
 	iffalse_jumpopenedtext Route35NationalParkGateOfficer1MakeRoomText
+    readvar VAR_DEBUG
 Route35NationalParkGate_LessThanFullParty: ; 6a27d
 	special CheckFirstMonIsEgg
 	iftrue_jumpopenedtext Route35NationalParkGateOfficer1EggAsFirstMonText
@@ -223,6 +224,7 @@ Route35NationalParkGateTutorCharmScript:
 
 	para "but they still"
 	line "could be cuter!"
+    cont "and cutest!!."
 	done
 
 .NoSilverLeaf
