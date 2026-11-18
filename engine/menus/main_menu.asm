@@ -217,4 +217,8 @@ MainMenu_MusicPlayer:
 	farjp MusicPlayer
 
 Debug:
- farjp Debugger 
+    farjp Debugger 
+
+MAINMENU_ITEM_DEBUG:
+   ;; soon
+   ld a, [Debug]
