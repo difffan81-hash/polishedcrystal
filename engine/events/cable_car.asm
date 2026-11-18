@@ -471,8 +471,9 @@ endc
 CableCarSunMoonYCoords:
 pusho Q16
 def HALF_SUN_MOON_DY equ div((MAX_SUN_MOON_Y - MIN_SUN_MOON_Y) * 1.0, 2.0)
-for i, 12
-	db MAX_SUN_MOON_Y - (mul(cos(i * 1.0 / 12), HALF_SUN_MOON_DY) + HALF_SUN_MOON_DY) / 1.0 + OAM_Y_OFS
+for i, 8
+	db MAX_SUN_MOON_Y - (mul(cos(i * 1.0 / 10), HALF_SUN_MOON_DY) + HALF_SUN_MOON_DY) / 1.0 + OAM_Y_OFS
+    db MAX_SUN_MOON_Y - (mul(cos(i * 2.0 / 2)
 endr
 popo
 
