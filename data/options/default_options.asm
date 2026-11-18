@@ -3,7 +3,7 @@ DefaultOptions:
 if DEF(DEBUG)
 	db 1 << NICKNAMES_NEVER
     db 2 << Debug
-    db 2 << DebugSpeed
+    db 1 << DebugSpeed
 else
 	db 0
 endc
@@ -23,5 +23,3 @@ endc
 	db EVS_OPT_MODERN | (1 << RTC_OPT) | (1 << EVOLVE_IN_BATTLE_OPT)
 ;  pokemonchange
  db 1 << pokemonchange
-; debugger 
- db 1 << debugger
