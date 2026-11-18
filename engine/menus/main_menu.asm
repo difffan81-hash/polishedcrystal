@@ -40,7 +40,7 @@ MainMenu:
 	db "New Game+@"
 	db "Options@"
 	db "Music Player@"
- db "debug option@"
+    db "Debug@"
 
 .Jumptable:
 	dw MainMenu_Continue
@@ -55,28 +55,32 @@ MainMenu:
 	const MAINMENU_ITEM_NEW_GAME_PLUS ; 2
 	const MAINMENU_ITEM_OPTION        ; 3
 	const MAINMENU_ITEM_MUSIC_PLAYER  ; 4
+    const MAINMENU_ITEM_DEBUG         ;5
 
 MainMenuItems:
 ; MAINMENU_MENU_NEW_GAME
-	db 3
+	db 4
 	db MAINMENU_ITEM_NEW_GAME
 	db MAINMENU_ITEM_OPTION
 	db MAINMENU_ITEM_MUSIC_PLAYER
+    db MAINMENU_ITEM_DEBUG
 	db -1
 ; MAINMENU_MENU_CONTINUE
-	db 4
+	db 5
 	db MAINMENU_ITEM_CONTINUE
 	db MAINMENU_ITEM_NEW_GAME
 	db MAINMENU_ITEM_OPTION
 	db MAINMENU_ITEM_MUSIC_PLAYER
+    db MAINMENU_ITEM_DEBUG
 	db -1
 ; MAINMENU_MENU_NEW_GAME_PLUS
-	db 5
+	db 6
 	db MAINMENU_ITEM_CONTINUE
 	db MAINMENU_ITEM_NEW_GAME
 	db MAINMENU_ITEM_NEW_GAME_PLUS
 	db MAINMENU_ITEM_OPTION
 	db MAINMENU_ITEM_MUSIC_PLAYER
+    db MAINMENU_ITEM_DEBUG
 	db -1
 
 	const_def
@@ -212,5 +216,5 @@ MainMenu_Continue:
 MainMenu_MusicPlayer:
 	farjp MusicPlayer
 
-debug option:
+Debug:
  farjp Debugger 
