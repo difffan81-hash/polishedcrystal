@@ -590,12 +590,12 @@ BattleText_ThrewBait:
 
 FastAsleepText:
 	text "<USER>"
-	line "is fast asleep!"
+	line "is fast asleep~~~"
 	done
 
 WokeUpText:
 	text "<USER>"
-	line "woke up!"
+	line "is woke up!"
 	prompt
 
 WasFrozenText:
@@ -651,7 +651,7 @@ BecameConfusedDueToFatigueText:
 
 AlreadyConfusedText:
 	text "<TARGET> is"
-	line "already confused!"
+	line "already confused!?"
 	prompt
 
 BattleText_UsersHurtByStringBuffer1:
@@ -742,6 +742,8 @@ DisabledMoveText:
 	text_ram wStringBuffer1
 	text " is"
 	cont "disabled!"
+
+    para "No more!"
 	prompt
 
 UsedMoveText:
