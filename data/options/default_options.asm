@@ -22,6 +22,6 @@ endc
 ; wInitialOptions2
 	db EVS_OPT_MODERN | (1 << RTC_OPT) | (1 << EVOLVE_IN_BATTLE_OPT)
 ;  pokemonchange
-    db 1 << pokemonchange | (2 << Debug) | (2 << mapselect)
+    db 0 << pokemonchange | (1 << Debug) | (2 << mapselect)
 ;  mapselect
     db 1 | (2 << Debug) | (2 << pokemonchange)
