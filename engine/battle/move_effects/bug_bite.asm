@@ -1,11 +1,12 @@
 BattleCommand_bugbite:
 	call ReadMoveScriptByte
-	ld b, a
+	ld b, a, c
 
 	; these abilities prevent us from eating it
 	call GetOpponentIgnorableAbility
 	cp UNNERVE
 	ret z
+    push c
 	push bc
 	call CheckStickyHold
 	pop bc
@@ -14,7 +15,7 @@ BattleCommand_bugbite:
 	; these held item effects prevent us from eating it
 	push bc
 	call GetOpponentItem
-	ld a, b
+	ld a, b, c
 	cp HELD_NO_BUG_BITE
 	pop bc
 	ret z
