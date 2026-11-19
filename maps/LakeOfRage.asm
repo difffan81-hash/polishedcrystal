@@ -56,7 +56,9 @@ LakeOfRageFlyPoint:
 LakeOfRageWesleyAndEngineer:
 	checkevent EVENT_LAKE_OF_RAGE_CIVILIANS
 	iftruefwd .NoEngineer
-	moveobject LAKEOFRAGE_LANCE, 18, 29
+	moveobject LAKEOFRAGE_LANCE, 19, 30
+    else
+    moveobject LAKEOFRAGE_LANCE, 18, 29
 .NoEngineer
 	readvar VAR_WEEKDAY
 	ifequalfwd WEDNESDAY, .WesleyAppears
