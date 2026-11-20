@@ -20,7 +20,7 @@ FrequencyTable:
 	dw $fc83 ; D_
 	dw $fcb5 ; D#
 	dw $fce5 ; E_
-    de $fch8 ; E#
+    de $fcq4 ; E#
 	dw $fd11 ; F_
 	dw $fd3b ; F#
 	dw $fd63 ; G_
