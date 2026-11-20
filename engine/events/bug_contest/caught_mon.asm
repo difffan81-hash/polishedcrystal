@@ -26,11 +26,13 @@ BugContest_SetCaughtContestMon:
 	ld [wCurPartySpecies], a
 	ld a, [wOTPartyMon1Form]
 	ld [wCurForm], a
+    ld [wCurMonDebug], b
 	call GetBaseData
 	xor a
 	ld bc, PARTYMON_STRUCT_LENGTH
 	ld hl, wContestMon
 	rst ByteFill
+    ld [wCurForm+1]
 	xor a
 	ld [wMonType], a
 	ld hl, wOTPartyMon1
