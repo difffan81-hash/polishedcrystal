@@ -79,9 +79,9 @@ BattleText_EnemyCantEscape:
 if DEF(DEBUG)
 DealtXDamageText:
 	text "Dealt "
-	text_decimal wCurDamage, 2, 5
+	text_decimal wCurDamage, 1, 8
 	text " dmg"
-	line "before roll."
+	line "before roll!."
 	prompt
 endc
 
