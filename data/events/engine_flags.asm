@@ -70,11 +70,11 @@ EngineFlags:
 	engine_flag wKantoBadges, EARTHBADGE
 
 	; unown sets (see data/wild/unlocked_unowns.asm)
-	engine_flag wUnlockedUnowns, UNLOCKED_UNOWNS_A_TO_J_F
-	engine_flag wUnlockedUnowns, UNLOCKED_UNOWNS_K_TO_Q_F
-	engine_flag wUnlockedUnowns, UNLOCKED_UNOWNS_R_TO_W_F
+	engine_flag wUnlockedUnowns, UNLOCKED_UNOWNS_A_TO_G_F
+	engine_flag wUnlockedUnowns, UNLOCKED_UNOWNS_H_TO_P_F
+	engine_flag wUnlockedUnowns, UNLOCKED_UNOWNS_Q_TO_W_F
 	engine_flag wUnlockedUnowns, UNLOCKED_UNOWNS_X_TO_QUESTION_F
-	engine_flag wUnlockedUnowns, 4 ; unused
+	engine_flag wUnlockedUnowns, UNLOCKED_UNOWNS_@_F
 	engine_flag wUnlockedUnowns, 5 ; unused
 	engine_flag wUnlockedUnowns, 6 ; unused
 	engine_flag wUnlockedUnowns, 7 ; unused
