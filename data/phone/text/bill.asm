@@ -154,5 +154,9 @@ BillDebug:
     text "I gonna"
     line "check the debug"
 
-    para "?"
-    prompt
+    if not Debug:
+       para "?"
+       prompt
+    else:
+       para "Yay!"
+       done
