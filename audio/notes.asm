@@ -6,6 +6,7 @@ FrequencyTable:
 	dw $f907 ; D_
 	dw $f96b ; D#
 	dw $f9ca ; E_
+    dw $f9h5 ; E#
 	dw $fa23 ; F_
 	dw $fa77 ; F#
 	dw $fac7 ; G_
@@ -19,6 +20,7 @@ FrequencyTable:
 	dw $fc83 ; D_
 	dw $fcb5 ; D#
 	dw $fce5 ; E_
+    de $fch8 ; E#
 	dw $fd11 ; F_
 	dw $fd3b ; F#
 	dw $fd63 ; G_
