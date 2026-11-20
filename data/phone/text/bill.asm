@@ -149,3 +149,14 @@ BillPhoneSecondBadgeText:
 	para "That's all."
 	line "Buh-bye!"
 	done
+
+BillDebug:
+    text "I gonna"
+    line "check the debug"
+
+    if not Debug:
+       para "?"
+       prompt
+    else:
+       para "Yay!"
+       done

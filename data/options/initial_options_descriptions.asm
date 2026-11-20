@@ -13,6 +13,8 @@ InitialOptionDescriptions:
 	dw .TradedMon
 	dw .EvolveInBattle
 	dw .ColorVariation
+ dw .pokemonchange
+ dw .mapselect
 	assert_table_length NUM_INITIAL_MENU_OPTIONS
 
 .Natures:
@@ -164,6 +166,16 @@ InitialOptionDescriptions:
 	para "variation based"
 	line "on nicknames."
 	prompt
+
+ .pokemonchange:
+  text "change the"
+  line "pokemon into"
+  cont "legacy"
+ prompt
+
+ .mapselect:
+  text "select a map"
+ prompt
 
 InitialOptionsDoneDescription:
 	text "Save your choices"

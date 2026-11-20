@@ -13,6 +13,8 @@ OptionNames:
 	dw .TurningSpeed
 	dw .ClockFormat
 	dw .PokedexUnits
+    dw .Debugger 
+    dw .DebugSpeed
 	assert_table_length NUM_OPTIONS
 
 .TextSpeed:
@@ -41,3 +43,7 @@ OptionNames:
 	db "Clock Format@"
 .PokedexUnits:
 	db "#dex Units@"
+.Debugger:
+    db "Debug@"
+.DebugSpeed:
+    db "Debug Speed"

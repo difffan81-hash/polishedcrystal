@@ -5,6 +5,17 @@ PlayersHouse2F_MapScriptHeader:
 	callback MAPCALLBACK_NEWMAP, PlayersHouse2FInitializeRoom
 	callback MAPCALLBACK_TILES, PlayersHouse2FSetSpawn
 
+ def_debug
+  dw .debug1
+  dw .debug2
+
+ .debug1:
+  text "welcome to"
+  line "pokemon debug!"
+ 
+ .debug2:
+  text "debug activated!"
+
 	def_warp_events
 	warp_event  7,  0, PLAYERS_HOUSE_1F, 3
 
@@ -345,6 +356,8 @@ InitialRadio:
 	musicfadeout MUSIC_NEW_BARK_TOWN, 16
 	writetext InitialRadioText4
 	pause 45
+ write text Debug_welcome
+ pause 45
 	closetext
 	setevent EVENT_LISTENED_TO_INITIAL_RADIO
 	end
@@ -403,3 +416,9 @@ InitialRadioText4:
 	text "#mon!"
 	line "#mon Channel…"
 	done
+Debug_welcome:
+ text "welcome!"
+ 
+ para "#mon Debug!"
+ line "#mon!"
+ debug

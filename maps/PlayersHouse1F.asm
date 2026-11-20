@@ -174,7 +174,11 @@ MomIntroText:
 if DEF(DEBUG)
 	text "Don't forget to use"
 	line "your debug radio!"
-	done
+ 
+ para "He added into"
+ line "Debug option"
+ done
+
 else
 	text "Oh, <PLAYER>!"
 	line "You're awake."

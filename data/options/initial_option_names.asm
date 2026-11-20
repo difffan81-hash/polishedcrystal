@@ -11,6 +11,8 @@ InitialOptionNames:
 	dw .TradedMon
 	dw .EvolveInBattle
 	dw .ColorVariation
+ dw .mapselect
+ dw .pokemonchange
 	assert_table_length NUM_INITIAL_MENU_OPTIONS
 
 .Natures:
@@ -35,3 +37,7 @@ InitialOptionNames:
 	db "Evolve in battle@"
 .ColorVariation:
 	db "Color variation@"
+.mapselect:
+ db "switching map@"
+.pokemonchange:
+ db "changing pokemon@"

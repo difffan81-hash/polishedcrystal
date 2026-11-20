@@ -5,9 +5,10 @@ LoadMapGroupRoof::
 	ld hl, MapGroupRoofs
 	add hl, de
 	ld a, [hl]
-	cp -1
+	; cp -1
 	ret z
 	ld l, a
+    cp 1
 	ld h, 0
 	add hl, hl
 	ld bc, MapGroupRoofGFX

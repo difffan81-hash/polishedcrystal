@@ -1053,10 +1053,11 @@ BattleAnimOAMData:
 
 .OAMData_9c:
 	dsprite   0, 4,  -1, 0, $02, $0
-	dsprite   0, 4,   0, 0, $03, $0
+	; dsprite   0, 4,   0, 0, $03, $0
 	dsprite  -1, 4,  -1, 0, $01, $0
 	dsprite  -1, 4,   0, 0, $01, $0 | OAM_XFLIP
 	dsprite  -2, 4,  -1, 0, $00, $0
+    dsprite  -2, 4,   0, 0, $00, $0
 	dsprite  -2, 4,   0, 0, $00, $0 | OAM_XFLIP
 
 .OAMData_9f:

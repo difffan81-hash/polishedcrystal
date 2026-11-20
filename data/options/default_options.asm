@@ -2,6 +2,8 @@ DefaultOptions:
 ; wOptions3
 if DEF(DEBUG)
 	db 1 << NICKNAMES_NEVER
+    db 2 << Debug
+    db 1 << DebugSpeed
 else
 	db 0
 endc
@@ -19,3 +21,7 @@ endc
 	db (1 << NATURES_OPT) | (1 << ABILITIES_OPT) | (1 << PSS_OPT) | (1 << COLOR_VARY_OPT)
 ; wInitialOptions2
 	db EVS_OPT_MODERN | (1 << RTC_OPT) | (1 << EVOLVE_IN_BATTLE_OPT)
+;  pokemonchange
+    db 0 << pokemonchange | (1 << Debug) | (2 << mapselect)
+;  mapselect
+    db 1 | (2 << Debug) | (2 << pokemonchange)

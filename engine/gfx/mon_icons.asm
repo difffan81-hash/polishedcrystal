@@ -99,6 +99,13 @@ _ShiftedSetMonColor:
 	jr nz, .loop
 	jmp PopAFBCDEHL
 
+.Debug
+    ld [hl], b
+	add hl, de
+	dec a
+	jr nz, .Debug
+	jmp changepokemon
+
 _GetFlyMonColor:
 	ld a, MON_SPECIES
 	call GetPartyParamLocationAndValue

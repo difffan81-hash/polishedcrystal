@@ -128,8 +128,8 @@ AzaleaGymBugsyScript:
 	para "My research isn't"
 	line "complete yet."
 
-	para "OK, you win. Take"
-	line "this Badge."
+	para "OK, you win."
+	line "Take this Badge"
 	done
 
 .AfterText:
@@ -246,7 +246,7 @@ GenericTrainerBug_catcherJosh:
 	done
 
 .BeatenText:
-	text "Urrgggh!"
+	text "Urrgggh! NO!"
 	done
 
 GenericTrainerTwinsAmyandmimi1:

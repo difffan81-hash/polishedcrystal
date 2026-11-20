@@ -1354,6 +1354,7 @@
 	wildmon 51, GRAVELER, ALOLAN_FORM
 	wildmon 55, ELECTRODE
 	wildmon 52, DUNSPARCE
+	wildmon 52, GRAVELER,
 	; day
 	wildmon 51, GOLBAT
 	wildmon 50, GRAVELER, ALOLAN_FORM
@@ -1398,6 +1399,7 @@
 	wildmon 51, GOLBAT
 	wildmon 54, HAUNTER
 	wildmon 51, DUNSPARCE
+ wildmon 51, CROBAT
 	end_grass_wildmons
 
 	def_grass_wildmons SOUL_HOUSE_B1F

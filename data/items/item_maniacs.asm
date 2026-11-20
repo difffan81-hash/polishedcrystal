@@ -9,9 +9,9 @@ GourmetManiacItemRewards:
 	dbw PERSIM_BERRY, 20
 	dbw LUM_BERRY,    20
 	dbw LEPPA_BERRY,  20
-	dbw POMEG_BERRY,  500
-	dbw KELPSY_BERRY, 500
-	dbw QUALOT_BERRY, 500
+	dbw POMEG_BERRY,  250
+	dbw KELPSY_BERRY, 250
+	dbw QUALOT_BERRY, 400
 	dbw HONDEW_BERRY, 500
 	dbw GREPA_BERRY,  500
 	dbw TAMATO_BERRY, 500
@@ -36,7 +36,7 @@ GourmetManiacItemRewards:
 	dbw MOOMOO_MILK,  500
 	dbw RAGECANDYBAR, 300
 	dbw PEWTERCRUNCH, 300
-	dbw RARE_CANDY,   10000
+	dbw RARE_CANDY,   0
 	dbw LEEK,         2000
 	dbw LEFTOVERS,    4000
 	dbw LUCKY_EGG,    4000

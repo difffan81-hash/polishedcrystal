@@ -86,6 +86,7 @@ DEF NUM_RADIO_CHANNELS EQU const_value
 	const BUENAS_PASSWORD_20     ; 4d
 	const BUENAS_PASSWORD_21     ; 4e
 	const RADIO_SCROLL           ; 4f
+ const DEBUG                  : 50
 DEF NUM_RADIO_SEGMENTS EQU const_value
 
 ; PlayRadioStationPointers indexes (see engine/pokegear/pokegear.asm)
@@ -110,3 +111,4 @@ DEF NUM_PASSWORDS_PER_CATEGORY EQU 3
 	const BUENA_ITEM
 	const BUENA_MOVE
 	const BUENA_STRING
+ const BUENA_DEBUG

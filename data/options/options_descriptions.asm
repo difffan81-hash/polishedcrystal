@@ -13,6 +13,8 @@ OptionsDescriptions:
 	dw .TurningSpeed
 	dw .ClockFormat
 	dw .PokedexUnits
+    dw .Debugger
+    dw .DebugSpeed
 	assert_table_length NUM_OPTIONS
 
 .TextSpeed:
@@ -105,6 +107,17 @@ OptionsDescriptions:
 	para "Metric: meters"
 	line "and kilograms."
 	prompt
+
+.Debugger:
+ text "Debug your game"
+ line "to make better"
+ prompt
+
+.DebugSpeed:
+ text "Speed up the game"
+ line "to make fast"
+ cont "and slow"
+ prompt
 
 OptionsDoneDescription:
 	text "Save options and"

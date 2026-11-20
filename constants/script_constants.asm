@@ -81,7 +81,8 @@ DEF STRING_BUFFER_LENGTH EQU 19
 	const VAR_TRAINER_STARS    ; 19
 	const VAR_LANDMARK         ; 1a
 	const VAR_PLAYERGENDER     ; 1b
-DEF NUM_VARS EQU const_value       ; 1c
+    const VAR_DEBUG            ; 1c
+DEF NUM_VARS EQU const_value       ; 1d
 
 ; PlayerEventScriptPointers indexes (see engine/overworld/events.asm)
 	const_def -1

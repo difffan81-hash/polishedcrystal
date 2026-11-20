@@ -40,6 +40,7 @@ MainMenu:
 	db "New Game+@"
 	db "Options@"
 	db "Music Player@"
+    db "Debug@"
 
 .Jumptable:
 	dw MainMenu_Continue
@@ -54,34 +55,39 @@ MainMenu:
 	const MAINMENU_ITEM_NEW_GAME_PLUS ; 2
 	const MAINMENU_ITEM_OPTION        ; 3
 	const MAINMENU_ITEM_MUSIC_PLAYER  ; 4
+    const MAINMENU_DEBUG         ;5
 
 MainMenuItems:
 ; MAINMENU_MENU_NEW_GAME
-	db 3
+	db 4
 	db MAINMENU_ITEM_NEW_GAME
 	db MAINMENU_ITEM_OPTION
 	db MAINMENU_ITEM_MUSIC_PLAYER
+    db MAINMENU_DEBUG
 	db -1
 ; MAINMENU_MENU_CONTINUE
-	db 4
+	db 5
 	db MAINMENU_ITEM_CONTINUE
 	db MAINMENU_ITEM_NEW_GAME
 	db MAINMENU_ITEM_OPTION
 	db MAINMENU_ITEM_MUSIC_PLAYER
+    db MAINMENU_DEBUG
 	db -1
 ; MAINMENU_MENU_NEW_GAME_PLUS
-	db 5
+	db 6
 	db MAINMENU_ITEM_CONTINUE
 	db MAINMENU_ITEM_NEW_GAME
 	db MAINMENU_ITEM_NEW_GAME_PLUS
 	db MAINMENU_ITEM_OPTION
 	db MAINMENU_ITEM_MUSIC_PLAYER
+    db MAINMENU_DEBUG
 	db -1
 
 	const_def
 	const MAINMENU_MENU_NEW_GAME      ; 0
 	const MAINMENU_MENU_CONTINUE      ; 1
 	const MAINMENU_MENU_NEW_GAME_PLUS ; 2
+    const MAINMENU_MENU_NEW_GAME_PLUS_DEBUG ; 3
 
 MainMenu_GetWhichMenu:
 	ld a, [wSaveFileExists]
@@ -210,3 +216,12 @@ MainMenu_Continue:
 
 MainMenu_MusicPlayer:
 	farjp MusicPlayer
+
+MAINMENU_DEBUG:
+    farjp Debug@
+    ld a, [BillDebug]
+    call BillDebug
+
+MAINMENU_MENU_NEW_GAME_PLUS_DEBUG:
+    farjp  Debug@
+    call Debug
