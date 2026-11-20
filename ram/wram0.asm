@@ -308,6 +308,10 @@ wAttackMissed::
 ; nonzero for a miss
 	db
 
+wCurMonDebug
+; 2 debug
+    db
+
 wBattleSubStatusWRAM::
 wPlayerSubStatus1::
 ; bit
