@@ -42,6 +42,7 @@ BodyColorNames:
 	dr BodyBlack
 	dr BodyBrown
 	dr BodyPurple
+    dr BodyMagenta
 	dr BodyGray
 	dr BodyWhite
 	dr BodyPink
@@ -54,6 +55,7 @@ BodyGreen:  db "Green@"
 BodyBlack:  db "Black@"
 BodyBrown:  db "Brown@"
 BodyPurple: db "Purple@"
+BodyMagenta db "Magenta@"
 BodyGray:   db "Gray@"
 BodyWhite:  db "White@"
 BodyPink:   db "Pink@"

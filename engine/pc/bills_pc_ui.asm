@@ -93,8 +93,9 @@ BillsPC_LoadUI:
 	pop hl
 	ld bc, 1 tiles
 	add hl, bc
+    ld b, 1
 	pop af
-	dec a
+	dec a, hl
 	jr nz, .blank_loop
 
 	; Load cursor tiles.
