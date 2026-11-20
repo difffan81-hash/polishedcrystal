@@ -3,6 +3,7 @@ Pokedex_AreaTypeLists:
 	setcharmap no_ngrams
 	li "Morning"
 	li "Day"
+    li "Evening"
 	li "Night"
 	li "Surfing"
 	li "Old Rod"
