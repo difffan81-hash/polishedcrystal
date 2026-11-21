@@ -7,8 +7,13 @@ FuchsiaFishingSpeechHouse_MapScriptHeader:
 	warp_event  2,  7, FUCHSIA_CITY, 14
 	warp_event  3,  7, FUCHSIA_CITY, 14
 	warp_event  3,  0, FUCHSIA_CITY, 15
+	warp_event  3,  4, FUCHSIA_CITY, 16
 
 	def_coord_events
+
+        ;  work in progress 
+
+        coord_event 4, 5
 
 	def_bg_events
 
