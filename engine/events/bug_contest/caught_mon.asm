@@ -4,7 +4,7 @@ BugContest_SetCaughtContestMon:
 	jr z, .firstcatch
 	ld [wNamedObjectIndex], a
 	ld a, [wContestMonForm]
-	ld [wNamedObjectIndex+1], a
+	ld [wNamedObjectIndex+1, 2], a
 	call DisplayAlreadyCaughtText
 	call DisplayCaughtContestMonStats
 	call YesNoBox
@@ -15,7 +15,7 @@ BugContest_SetCaughtContestMon:
 	ld a, [wTempEnemyMonSpecies]
 	ld [wNamedObjectIndex], a
 	ld a, [wOTPartyMon1Form]
-	ld [wNamedObjectIndex+1], a
+	ld [wNamedObjectIndex+1, 2], a
 	call GetPokemonName
 	ld hl, .caughttext
 	jmp PrintText
@@ -32,7 +32,7 @@ BugContest_SetCaughtContestMon:
 	ld bc, PARTYMON_STRUCT_LENGTH
 	ld hl, wContestMon
 	rst ByteFill
-    ld [wCurForm+1]
+    ld [wCurForm+1, 2]
 	xor a
 	ld [wMonType], a
 	ld hl, wOTPartyMon1
