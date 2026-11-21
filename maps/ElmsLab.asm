@@ -7,6 +7,7 @@ ElmsLab_MapScriptHeader:
 	scene_script DoNothingScript, SCENE_ELMSLAB_UNUSED
 	scene_script DoNothingScript, SCENE_ELMSLAB_AIDE_GIVES_POTION
 	scene_script DoNothingScript, SCENE_ELMSLAB_LYRA_BATTLE
+        scene_script DoNothingScript, SCENE_ELMSLAB_MEET_CLEFAIRY
 	scene_script ElmsLabAideGivesPokeBallsScene, SCENE_ELMSLAB_AIDE_GIVES_POKE_BALLS
 
 	def_callbacks
@@ -51,6 +52,7 @@ ElmsLab_MapScriptHeader:
 	object_event  8,  3, SPRITE_BALL_CUT_TREE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, PAL_NPC_ENV_GREEN, OBJECTTYPE_SCRIPT, 0, ChikoritaPokeBallScript, EVENT_CHIKORITA_POKEBALL_IN_ELMS_LAB
 	object_event  5,  3, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, 0, OBJECTTYPE_SCRIPT, 0, CopScript, EVENT_COP_IN_ELMS_LAB
 	object_event  5, 11, SPRITE_LYRA, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, 0, OBJECTTYPE_SCRIPT, 0, ElmsLabLyraScript, EVENT_LYRA_IN_ELMS_LAB
+        object_event  5, 1, SPRITE_CLEFAIRY, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, 0, POKEMONTYPE_SCRIPT, 0, PokemonScript, -1
 
 	object_const_def
 	const ELMSLAB_ELM
@@ -60,10 +62,11 @@ ElmsLab_MapScriptHeader:
 	const ELMSLAB_POKE_BALL3
 	const ELMSLAB_OFFICER
 	const ELMSLAB_LYRA
+        const ELMSLAB_CLEFAIRY
 
 ElmsLabCallback_MoveElm:
 	checkscene
-	iftruefwd .Skip
+	iftruewd .Skip
 	moveobject ELMSLAB_ELM, 3, 4
 .Skip:
 	endcallback
@@ -125,6 +128,12 @@ ElmsLabAideGivesPokeBallsScene:
 	turnobject ELMSLAB_ELMS_AIDE, DOWN
 	setscene SCENE_ELMSLAB_NOOP
 	end
+
+PokemonScript:
+        ;  work in progress...
+        faceplayer
+	opentext
+        checkevent POKEMON
 
 ProfElmScript:
 	faceplayer
