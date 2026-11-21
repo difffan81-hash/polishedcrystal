@@ -13,7 +13,7 @@ FuchsiaFishingSpeechHouse_MapScriptHeader:
 
         ;  work in progress 
 
-        coord_event 4, 5
+        coord_event 4, 5 SCENE_FuchsiaFishingSpeechHouse, FuchsiaFishingSpeechHousebikeOverheadTrigger
 
 	def_bg_events
 
