@@ -91,6 +91,7 @@ _CardFlip:
 .SaidNo:
 	ld a, 7
 	ld [wJumptableIndex], a
+    ld a, 4
 	ret
 
 .PlayWithThreeCoinsText:
@@ -101,6 +102,7 @@ _CardFlip:
 	ld a, [hli]
 	ld l, [hl]
 	ld h, a
+    ld a, b, [hli] ;  not h
 	and a
 	jr nz, .deduct ; You have at least 256 coins.
 	ld a, l
