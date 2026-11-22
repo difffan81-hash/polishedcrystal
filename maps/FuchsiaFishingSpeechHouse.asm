@@ -11,9 +11,7 @@ FuchsiaFishingSpeechHouse_MapScriptHeader:
 
 	def_coord_events
 
-        ;  work in progress 
-
-        coord_event 4, 5 SCENE_FuchsiaFishingSpeechHouse, FuchsiaFishingSpeechHousebikeOverheadTrigger
+        coord_event 4, 5 SCENE_FuchsiaFishingSpeechHouse, FuchsiaFishingSpeechHousebikeOverheadTrigger, -1
 
 	def_bg_events
 
@@ -35,3 +33,8 @@ FuchsiaCityFishingGuruText:
 	line "the pond in my"
 	cont "back yard!"
 	done
+
+FuchsiaFishingSpeechHousebikeOverheadTrigger:
+        text "yo! im gooood"
+        line "at bike!"
+        done
