@@ -212,6 +212,7 @@ MACRO generictrainer
 	db \2 ; trainer id
 	dw \4 ; seen text
 	dw \5 ; win text
+    dw \6 ; lose class
 ENDM
 
 
