@@ -231,12 +231,26 @@ MACRO paletteswap
 	db \1, \2 ; X range
 	db \3, \4 ; Y range
 	db \5 ; palette ID
-	dw \6 ; out-of-range palette list
-	dw \7 ; in-range palette list
-	assert BANK(\6) == BANK(SwapColorPalette) || BANK(\6) == 0, \
-		"\6 is not accessible in the color ROMX bank!"
-	assert BANK(\7) == BANK(SwapColorPalette) || BANK(\6) == 0, \
-		"\7 is not accessible in the color ROMX bank!"
+	if STRFIND("\6", "PAL_BG_") == 0
+		db \6, PALSWAP_BG_INDEX ; out-of-range bg palette index
+	elif STRFIND("\6", "GROUP_") == 0
+		db \6, PALSWAP_ROOF_INDEX ; out-of-range roof palette index
+	else
+		dw \6 ; out-of-range palette list
+		assert HIGH(\6) != PALSWAP_BG_INDEX && HIGH(\6) != PALSWAP_ROOF_INDEX
+		assert BANK(\6) == BANK(SwapColorPalette) || BANK(\6) == 0, \
+			"\6 is not accessible in the color ROMX bank!"
+	endc
+	if STRFIND("\7", "PAL_BG_") == 0
+		db \7, PALSWAP_BG_INDEX ; in-range bg palette index
+	elif STRFIND("\7", "GROUP_") == 0
+		db \7, PALSWAP_ROOF_INDEX ; in-range roof palette index
+	else
+		dw \7 ; in-range palette list
+		assert HIGH(\7) != PALSWAP_BG_INDEX && HIGH(\7) != PALSWAP_ROOF_INDEX
+		assert BANK(\7) == BANK(SwapColorPalette) || BANK(\7) == 0, \
+			"\7 is not accessible in the color ROMX bank!"
+	endc
 	; wPaletteSwapStates and wPaletteSwapInits use one bit per entry,
 	; so max 8 paletteswaps for the 8 bits.
 	assert _NUM_PALETTE_SWAPS < 8, "A palette swap list may have at most 8 entries"

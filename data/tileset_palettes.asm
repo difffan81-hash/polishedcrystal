@@ -1,6 +1,8 @@
 TilesetBGPalette::
 	table_width 1 palettes
 INCLUDE "gfx/tilesets/bg_tiles.pal"
+	assert_table_length 8 * 5 ; morn, day, nite, eve, indoor
+INCLUDE "gfx/tilesets/bg_dungeon_water.pal"
 	assert_table_length 8 * 5 + 4 ; morn, day, nite, eve, indoor, water
 
 RoofPals:
@@ -15,18 +17,6 @@ INCLUDE "gfx/tilesets/roofs_overcast.pal"
 
 ; The palettes below are used by `paletteswap` callbacks.
 
-OverworldRedPalettes::
-INCLUDE "gfx/tilesets/palette-swap/bg-red.pal"
-
-OverworldGreenPalettes::
-INCLUDE "gfx/tilesets/palette-swap/bg-green.pal"
-
-OverworldWaterPalettes::
-INCLUDE "gfx/tilesets/palette-swap/bg-water.pal"
-
-OverworldYellowPalettes::
-INCLUDE "gfx/tilesets/palette-swap/bg-yellow.pal"
-
 GameCornerExteriorPalettes::
 INCLUDE "gfx/tilesets/palette-swap/game-corner.pal"
 
@@ -38,9 +28,6 @@ INCLUDE "gfx/tilesets/palette-swap/goldenrod-museum.pal"
 
 GoldenrodBikeShopRoofPalettes::
 INCLUDE "gfx/tilesets/palette-swap/goldenrod-bike-shop.pal"
-
-GoldenrodCityRoofPalettes::
-INCLUDE "gfx/tilesets/palette-swap/goldenrod-roof.pal"
 
 GoldenrodHarborPlantVendorAwningPalettes::
 INCLUDE "gfx/tilesets/palette-swap/plant-vendor.pal"
@@ -60,12 +47,6 @@ INCLUDE "gfx/tilesets/palette-swap/celadon-hotel.pal"
 PowerPlantRoofPalettes:
 INCLUDE "gfx/tilesets/palette-swap/power-plant.pal"
 
-FuchsiaCityRoofPalettes::
-INCLUDE "gfx/tilesets/palette-swap/fuchsia-roof.pal"
-
-SafariZoneRoofPalettes::
-INCLUDE "gfx/tilesets/palette-swap/safari-zone-roof.pal"
-
 DayOfWeekSiblingsHouseRoofPalettes::
 LavenderRadioTowerRoofPalettes::
 INCLUDE "gfx/tilesets/palette-swap/lavender-radio-tower-roof.pal"
@@ -82,9 +63,6 @@ INCLUDE "gfx/tilesets/palette-swap/steel-wing-roof.pal"
 NuggetBridgePalettes::
 RuggedRoadSouthFlowerPalettes::
 INCLUDE "gfx/tilesets/palette-swap/nugget-bridge.pal"
-
-VermilionCityRoofPalettes::
-INCLUDE "gfx/tilesets/palette-swap/vermilion-roof.pal"
 
 SeagallopFerryRoofPalettes::
 INCLUDE "gfx/tilesets/palette-swap/seagallop-ferry-roof.pal"
