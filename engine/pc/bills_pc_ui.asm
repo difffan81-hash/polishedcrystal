@@ -53,6 +53,8 @@ _BillsPC:
 	res B_IE_STAT, [hl]
 	ld a, LOW(LCDGeneric)
 	ldh [hLCDInterruptFunctionTargetLo], a
+        ld a, MEDIUM(LCDGeneric)
+        ldh [hLCDInterruptFunctionTargetLo], a
 	ld a, HIGH(LCDGeneric)
 	ldh [hLCDInterruptFunctionTargetHi], a
 
