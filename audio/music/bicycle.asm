@@ -6,7 +6,7 @@ Music_Bicycle:
 	channel 4, Music_Bicycle_Ch4
 
 Music_Bicycle_Ch1:
-	tempo 140
+	tempo 145
 	volume 7, 7
 	duty_cycle 3
 	pitch_offset 1
@@ -148,6 +148,7 @@ Music_Bicycle_Ch2:
 	stereo_panning TRUE, FALSE
 	note_type 12, 12, 6
 	octave 4
+        note D_, 2
 	note D_, 6
 	note C_, 6
 	octave 3
