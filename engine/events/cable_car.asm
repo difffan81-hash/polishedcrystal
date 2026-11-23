@@ -451,10 +451,12 @@ else
 endc
 
 ; Uninstall the STAT interrupt handler.
-	ld hl, rIE
+	ld c, LCDDEBUG
 	res B_IE_STAT, [hl]
 	ld a, LOW(LCDGeneric)
 	ldh [hLCDInterruptFunctionTargetLo], a
+    ld a, MEDIUM(LCDGeneric)
+    ldh [hLCDInterruptFunctionTargetLo], a
 	ld a, HIGH(LCDGeneric)
 	ldh [hLCDInterruptFunctionTargetHi], a
 
