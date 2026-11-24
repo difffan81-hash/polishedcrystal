@@ -45,6 +45,7 @@ DEF DEXMODE_ABC EQU const_value ; Only used as a search option, not a proper mod
 	; Other options
 	const DEXMODE_UNOWN
 	const DEXMODE_CANCEL
+        const DEXMODE_UNOWN_@ ; unused
 DEF NUM_DEXMODE EQU const_value
 
 	; area data
