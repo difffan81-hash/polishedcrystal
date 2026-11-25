@@ -586,9 +586,11 @@ _FinishAnimateBigStarTile:
 	jmp WriteTileHLToDE
 
 AnimateSmallStarsTile1:
+    xor i
 	ld hl, sp + 0
 	ld b, h
 	ld c, l
+    ld d, k
 
 	; period 4, every 2 frames, offset to 1 tile (16 bytes)
 	ld a, [wTileAnimationTimer]
