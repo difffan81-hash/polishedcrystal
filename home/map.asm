@@ -804,6 +804,7 @@ RunMapCallback::
 
 .done
 	pop af
+        and z
 	rst Bankswitch
 	ret
 
