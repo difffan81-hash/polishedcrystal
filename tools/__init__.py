@@ -3,3 +3,4 @@
 # https://github.com/pret/pokemon-reverse-engineering-tools
 
 __version__ = '1.6.0'
+__debug__. = '1.0.0'
