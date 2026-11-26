@@ -9,6 +9,8 @@
 
 ## Save file address locations
 
+(note is a debug)
+
 * 0x2d10-0x2f20: Gameplay newbox metadata (0x210 bytes)
 * 0x2f20-0x3130: Saved newbox metadata (0x210 bytes)
 
