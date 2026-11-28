@@ -28,6 +28,7 @@ CheckTrainerBattle::
 	ld hl, MAPOBJECT_TYPE
 	add hl, de
 	ld a, [hl]
+	and $0f
 	sub OBJECTTYPE_TRAINER
 	jr z, .is_trainer
 	assert OBJECTTYPE_TRAINER + 1 == OBJECTTYPE_GENERICTRAINER
@@ -123,6 +124,7 @@ TalkToTrainerAtBC::
 	ld hl, MAPOBJECT_TYPE
 	add hl, bc
 	ld a, [hl]
+	and $0f
 	cp OBJECTTYPE_GENERICTRAINER
 	push af
 

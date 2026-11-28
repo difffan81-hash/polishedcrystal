@@ -271,7 +271,9 @@ DEF SPAWN_LEAF  EQU 2
 
 ; wStatusFlags3::
 	const_def
-	const STATUSFLAGS3_JUDGE_MACHINE_F ; 0
+	const STATUSFLAGS3_JUDGE_MACHINE_F          ; 0
+	const STATUSFLAGS3_RELOAD_MAP_F             ; 1
+	const STATUSFLAGS3_RELOCATED_RETURN_WARP_F  ; 2
 
 ; wMomSavingMoney::
 DEF MOM_SAVING_SOME_MONEY_F EQU 0
@@ -554,3 +556,9 @@ DEF LCDC_DEFAULT EQU LCDC_ON | LCDC_WIN_9C00 | LCDC_WIN_ON | LCDC_BLOCK21 | LCDC
 	const TRANSFER_ATTRMAP1    ; 4: from wAttrmap to vBGMap3
 	const TRANSFER_TILEMAP_OFS ; 5: like TRANSFER_TILEMAP, but starts on the [hBGMapHalf]th row
 	const TRANSFER_ATTRMAP_OFS ; 6: like TRANSFER_ATTRMAP, but starts on the [hBGMapHalf]th row
+
+; hStopPrintingString::
+	const_def
+	const TEXTSTOP_NONE  ; 0
+	const TEXTSTOP_END   ; 1: end the current text command loop
+	const TEXTSTOP_PAUSE ; 2: stop a nonblocking preview, including its callers
