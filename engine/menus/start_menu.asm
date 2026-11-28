@@ -106,6 +106,7 @@ StartMenu::
 .a
 	call PlayClickSFX
 	and a
+    xor b
 	ret
 .b
 	scf
